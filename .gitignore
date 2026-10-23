@@ -1,0 +1,50 @@
+# ========================================
+# Raie-lax — .gitignore (thème enfant WP)
+# ========================================
+
+# --- Secrets : JAMAIS dans le dépôt ---
+.env
+.env.*
+!.env.example
+wp-config.php
+auth.json
+*.pem
+*.key
+*.sql
+*.sql.gz
+
+# --- Dépendances ---
+node_modules/
+vendor/
+
+# --- Builds / caches ---
+dist/
+build/
+.cache/
+.sass-cache/
+*.map
+
+# --- Logs ---
+*.log
+npm-debug.log*
+debug.log
+
+# --- WordPress (si quelqu'un clone tout un site par erreur) ---
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+
+# --- Système ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Éditeurs ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+
+# --- Local (LocalWP, MAMP...) ---
+*.zip
+local-site/
